@@ -10,9 +10,9 @@ var letras = {
 document.getElementById("sistemaForm").addEventListener("submit", function(event){
     event.preventDefault();
     var matriz = [[], [], [], [], []];
-    var X = [0,0,0,0];
+    var X = [1,1,1,1];
     var auxX = [(X[0]+1),(X[1]+1),(X[2]+1),(X[3]+1)];
-    var E = .01;
+    var E = .001;
     var iteracoes = 0;
 
     for(var i = 0; i < 4; i++){
@@ -45,7 +45,7 @@ document.getElementById("sistemaForm").addEventListener("submit", function(event
     }
 
     iteracoes = 0;
-    X = [0,0,0,0];
+    X = [1,1,1,1];
     auxX = [(X[0]+1),(X[1]+1),(X[2]+1),(X[3]+1)];
 
     //Gauss-Seidel
